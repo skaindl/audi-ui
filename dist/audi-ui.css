@@ -1,9 +1,9 @@
 /**
- * @audi/audi-ui - Audi UI components in HTML, CSS and JS.
- * @version v1.0.0-alpha.1
- * @license Apache-2.0
- * @copyright 2017 Audi
- * @link https://github.com/audi/audi-ui
+ * @marcusvetter/audi-ui-angular-compatible - Audi UI components in HTML, CSS and JS, compatible with Angular CLI 1.6.0+
+ * @version v0.0.1
+ * @license undefined
+ * @copyright 2018 Marcus Vetter
+ * @link https://github.com/marcusvetter/audi-ui
  */
 @charset "UTF-8";
 /**
@@ -139,123 +139,6 @@
   .aui-alert.is-closed .aui-alert__content {
     box-shadow: none;
     transform: translateY(-100%); }
-
-.aui-audioplayer {
-  padding: 1.25rem; }
-  .aui-audioplayer__controls {
-    line-height: 23px;
-    -ms-flex-order: 1;
-        order: 1; }
-    .aui-audioplayer__controls .aui-button-group {
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap; }
-    .aui-audioplayer__controls--secondary {
-      margin-top: 1rem;
-      -ms-flex-order: 2;
-          order: 2; }
-  .aui-audioplayer__chrome {
-    -ms-flex-align: center;
-        align-items: center;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    height: 100%;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    vertical-align: middle; }
-  .aui-audioplayer__cover {
-    background-color: #e5e5e5;
-    display: none;
-    min-height: 100px;
-    min-width: 100px;
-    max-height: 100px;
-    max-width: 100px; }
-  .aui-audioplayer--large-cover .aui-audioplayer__cover {
-    margin-bottom: 20px;
-    max-height: inherit;
-    max-width: inherit; }
-  .aui-audioplayer__cover-image {
-    width: 100%;
-    display: block; }
-  .aui-audioplayer__meta {
-    font-size: 0.875rem;
-    line-height: 1;
-    margin-bottom: 1rem;
-    -ms-flex-order: 0;
-        order: 0;
-    width: 100%; }
-  .aui-audioplayer__time {
-    font-size: 0.75rem;
-    margin-top: 0.25rem; }
-  .aui-audioplayer__title {
-    margin-bottom: 0.25rem; }
-  .aui-audioplayer__icon-previous .audiicon-small, .aui-audioplayer__icon-next .audiicon-small {
-    visibility: visible; }
-  .aui-audioplayer__icon-previous .audiicon-large, .aui-audioplayer__icon-next .audiicon-large {
-    visibility: hidden; }
-  .aui-audioplayer__icon-pause .audiicon-small, .aui-audioplayer__icon-play .audiicon-small {
-    visibility: hidden; }
-  .aui-audioplayer__icon-pause .audiicon-large, .aui-audioplayer__icon-play .audiicon-large {
-    visibility: visible; }
-  .aui-audioplayer__icon-exit-fullscreen, .aui-audioplayer__icon-pause, .aui-audioplayer__icon-replay, .aui-audioplayer__icon-unmute {
-    display: none; }
-  .aui-audioplayer.is-controlled .aui-audioplayer__chrome,
-  .aui-audioplayer:hover .aui-audioplayer__chrome {
-    transform: translateY(0); }
-  .aui-audioplayer.is-seeking .aui-audioplayer__seek-holder {
-    opacity: 1;
-    transition-delay: .1s; }
-  .aui-audioplayer.is-seeking .aui-audioplayer__preview {
-    opacity: 1;
-    transition-delay: .1s; }
-  .aui-audioplayer.is-seeking.aui-player--preview .aui-audioplayer__chrome::after {
-    transition-delay: 0s; }
-  .aui-audioplayer.is-mute .aui-audioplayer__icon-mute {
-    display: none; }
-  .aui-audioplayer.is-mute .aui-audioplayer__icon-unmute {
-    display: inline-block; }
-  .aui-audioplayer.is-playing .aui-audioplayer__icon-play {
-    display: none; }
-  .aui-audioplayer.is-playing .aui-audioplayer__icon-pause {
-    display: inline-block; }
-  .aui-audioplayer.is-complete .aui-audioplayer__icon-pause,
-  .aui-audioplayer.is-complete .aui-audioplayer__icon-play {
-    display: none; }
-  .aui-audioplayer.is-complete .aui-audioplayer__icon-replay {
-    display: inline-block; }
-  .aui-audioplayer .aui-slider {
-    min-height: 1.25rem; }
-  .aui-audioplayer .aui-slider__handle {
-    height: 1.25rem;
-    width: 1.25rem; }
-  .aui-audioplayer .aui-slider__target {
-    height: 1.25rem;
-    margin-left: 0.625rem;
-    margin-right: 0.625rem; }
-  @media (min-width: 740px) {
-    .aui-audioplayer {
-      padding: 1.25rem 1rem 1.25rem 0px; }
-      .aui-audioplayer--frameless {
-        padding: 0px 1rem 0px 0px; }
-      .aui-audioplayer__controls {
-        margin-left: 1rem; }
-        .aui-audioplayer__controls--secondary {
-          margin-top: 0; }
-      .aui-audioplayer__chrome {
-        -ms-flex-direction: row;
-            flex-direction: row; }
-      .aui-audioplayer__cover {
-        display: block; }
-      .aui-audioplayer__meta {
-        margin-bottom: 0;
-        margin-left: 1rem;
-        margin-top: 0;
-        -ms-flex-order: 2;
-            order: 2; }
-      .aui-audioplayer__playhead {
-        width: 1.25rem;
-        height: 1.25rem; } }
 
 .aui-animation-morph-in, .aui-animation-morph-out {
   transition-timing-function: cubic-bezier(0.75, 0.02, 0.5, 1);
@@ -2743,98 +2626,6 @@ body::before {
     .aui-player.is-seeking.aui-player--preview .aui-player__chrome::after {
       height: 200px; } }
 
-/**
- * Prevent zooming of body, when popover is open.
- * Added to body by JS.
- */
-.aui-popover-is-open {
-  overflow-x: hidden; }
-
-.aui-popover {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 2px;
-  width: 0;
-  height: 0;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-align: left;
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .15s linear, visibility .15s linear;
-  z-index: 1002;
-  /**
-   * States
-   */ }
-  .aui-popover.aui-tether-enabled {
-    width: 90vw;
-    max-width: 22em;
-    height: auto;
-    overflow: visible;
-    visibility: visible; }
-  .aui-popover__content {
-    position: relative;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.05), 0 0 50px 0 rgba(0, 0, 0, 0.07); }
-  .aui-popover__content:not([class^="aui-color-"]):not([class*=" aui-color-"]) {
-    background-color: #ffffff; }
-  .aui-popover__text {
-    display: block;
-    position: relative;
-    padding: 1rem;
-    background-color: inherit;
-    z-index: 1; }
-  .aui-popover__media {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: auto;
-    z-index: 1; }
-  .aui-popover__arrow {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    fill: #ffffff;
-    transform: translate(-50%, -50%); }
-  .aui-popover__arrow-shape {
-    display: block; }
-  .aui-popover.aui-tether-element-attached-top {
-    margin-top: 12px; }
-    .aui-popover.aui-tether-element-attached-top .aui-popover__arrow {
-      top: 0; }
-  .aui-popover.aui-tether-element-attached-bottom {
-    margin-top: -12px; }
-    .aui-popover.aui-tether-element-attached-bottom .aui-popover__arrow {
-      top: 100%; }
-  .aui-popover.aui-tether-element-attached-left {
-    padding-left: 12px; }
-    .aui-popover.aui-tether-element-attached-left .aui-popover__arrow {
-      left: 0; }
-  .aui-popover.aui-tether-element-attached-right {
-    padding-right: 12px; }
-    .aui-popover.aui-tether-element-attached-right .aui-popover__arrow {
-      left: 100%; }
-  .aui-popover.aui-tether-element-attached-middle.aui-tether-pinned-right {
-    left: 0 !important;
-    padding-right: 12px; }
-    .aui-popover.aui-tether-element-attached-middle.aui-tether-pinned-right .aui-popover__arrow {
-      left: 100%; }
-  .aui-popover.aui-tether-element-attached-middle.aui-tether-pinned-left {
-    right: 0;
-    left: auto !important;
-    padding-left: 12px; }
-    .aui-popover.aui-tether-element-attached-middle.aui-tether-pinned-left .aui-popover__arrow {
-      left: 0; }
-  .aui-popover.is-shown {
-    opacity: 1;
-    visibility: visible;
-    transition-duration: .25s; }
-
 .aui-progress {
   position: relative;
   height: 0.25rem;
@@ -4167,22 +3958,6 @@ body {
   .aui-hidden-huge {
     display: none !important; } }
 
-.aui-audioplayer.aui-theme-light {
-  color: #ffffff; }
-  .aui-audioplayer.aui-theme-light .aui-button {
-    fill: #ffffff;
-    color: #ffffff; }
-  .aui-audioplayer.aui-theme-light .aui-audioplayer__playhead {
-    background-color: #333333; }
-  .aui-audioplayer.aui-theme-light .aui-audioplayer__progress--loading {
-    background-color: #808080; }
-  .aui-audioplayer.aui-theme-light .aui-audioplayer__progress--progress {
-    background-color: #ffffff; }
-  .aui-audioplayer.aui-theme-light .aui-audioplayer__progress-holder {
-    background-color: #4c4c4c; }
-  .aui-audioplayer.aui-theme-light .aui-audioplayer__cover {
-    background-color: #000000; }
-
 .aui-breadcrumb.aui-theme-black.is-oversized::after {
   background: linear-gradient(to right, #000000 5%, transparent 100%); }
 
@@ -4713,7 +4488,6 @@ body {
    */ }
   .aui-textfield.aui-theme-light {
     stroke: #f2f2f2;
-    color: #f2f2f2;
     /**
      * States
      */ }

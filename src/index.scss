@@ -2,10 +2,8 @@
 @import 'variables';
 @import 'functions';
 @import 'mixins';
-
 // Import components
 @import "alert/alert";
-@import "audioplayer/audioplayer";
 @import "animation/animation";
 @import "breakpoint/breakpoint";
 @import "badge/badge";
@@ -30,7 +28,6 @@
 @import "pager/pager";
 @import "pagination/pagination";
 @import "player/player";
-@import "popover/popover";
 @import "progress/progress";
 @import "radio/radio";
 @import "response/response";
@@ -45,6 +42,5 @@
 @import "tooltip/tooltip";
 @import "typography/typography";
 @import "visibility/visibility";
-
 // Import color themes
 @import "themes";

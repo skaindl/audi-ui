@@ -1,13 +1,13 @@
 {
-  "name": "@audi/audi-ui",
-  "version": "1.0.0-alpha.1",
-  "description": "Audi UI components in HTML, CSS and JS.",
-  "author": "Audi",
+  "name": "audi-ui-angular-compatible",
+  "version": "0.0.1",
+  "description": "Audi UI components in HTML, CSS and JS, compatible with Angular CLI 1.6.0+",
+  "author": "Marcus Vetter",
   "private": false,
-  "homepage": "https://github.com/audi/audi-ui",
+  "homepage": "https://github.com/marcusvetter/audi-ui",
   "repository": {
     "type": "git",
-    "url": "git://github.com/audi/audi-ui.git"
+    "url": "git://github.com/marcusvetter/audi-ui.git"
   },
   "main": "dist/audi-ui.min.js",
   "devDependencies": {
@@ -45,6 +45,7 @@
     "gulp-to-json": "^1.0.1",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
+    "gulp-cli": "^2.0.1",
     "normalize.css": "^5.0.0",
     "nouislider": "^9.2.0",
     "path": "^0.12.7",
@@ -62,6 +63,5 @@
   },
   "directories": {
     "test": "test"
-  },
-  "license": "Apache-2.0"
+  }
 }

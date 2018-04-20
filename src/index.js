@@ -6,7 +6,6 @@
  * Import all AUI components.
  */
 import Alert from './alert/alert';
-import Audioplayer from './audioplayer/audioplayer';
 import Breadcrumb from './breadcrumb/breadcrumb';
 import Checkbox from './checkbox/checkbox';
 import Dropdown from './dropdown/dropdown';
@@ -17,7 +16,6 @@ import Nav from './nav/nav';
 import Notification from './notification/notification';
 import Pagination from './pagination/pagination';
 import Player from './player/player';
-import Popover from './popover/popover';
 import Progress from './progress/progress';
 import Radio from './radio/radio';
 import Response from './response/response';
@@ -36,7 +34,6 @@ import Tooltip from './tooltip/tooltip';
  */
 export {
   Alert,
-  Audioplayer,
   Breadcrumb,
   Checkbox,
   Dropdown,
@@ -47,7 +44,6 @@ export {
   Notification,
   Pagination,
   Player,
-  Popover,
   Progress,
   Radio,
   Response,
@@ -81,7 +77,6 @@ class ComponentHandler {
 
   upgradeAllElements() {
     Alert.upgradeElements();
-    Audioplayer.upgradeElements();
     Breadcrumb.upgradeElements();
     Checkbox.upgradeElements();
     Dropdown.upgradeElements();
@@ -92,7 +87,6 @@ class ComponentHandler {
     Notification.upgradeElements();
     Pagination.upgradeElements();
     Player.upgradeElements();
-    Popover.upgradeElements();
     // Progress.upgradeElements();
     Radio.upgradeElements();
     Response.upgradeElements();
