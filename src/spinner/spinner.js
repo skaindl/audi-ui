@@ -143,11 +143,15 @@ export default class Spinner extends Component {
   loop() {
     if (this._continuous) {
       this._progressPath.style.strokeOpacity = 1;
-      window.requestAnimationFrame(timestamp => this._animateLoop(timestamp));
+      this._animationFrameId = window.requestAnimationFrame(timestamp => this._animateLoop(timestamp));
     }
   }
 
-  stop() {}
+  stop() {
+    if (this._animationFrameId) {
+      window.cancelAnimationFrame(this._animationFrameId);
+    }
+  }
 
   resize() {
     const size = this._element.offsetWidth;
@@ -191,7 +195,7 @@ export default class Spinner extends Component {
     // this._group.setAttributeNS(null, 'transform', `rotate(${this._rotate})`);
     this._groupProgress.setAttributeNS(null, 'transform', `rotate(${this._rotate})`);
 
-    window.requestAnimationFrame(timestamp => this._animateLoop(timestamp));
+    this._animationFrameId = window.requestAnimationFrame(timestamp => this._animateLoop(timestamp));
   }
 
   _updateClasses() {
